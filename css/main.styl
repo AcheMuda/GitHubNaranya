@@ -1,0 +1,249 @@
+
+
+@font-face{
+    font-family: 'icomoon-github';
+        src: url('../fonts/icon-github/icomoon.eot?-86m8ff');
+        src:
+                url('../fonts/icon-github/icomoon.eot?#iefix-86m8ff') format('embedded-opentype'),
+                url('../fonts/icon-github/icomoon.woff?-86m8ff') format('woff'),
+                url('../fonts/icon-github/icomoon.ttf?-86m8ff') format('truetype'),
+                url('../fonts/icon-github/icomoon.svg?-86m8ff#icomoon') format('svg')
+        font-weight: normal;
+        font-style: normal;
+}
+
+@font-face{
+    font-family: 'Lato';
+        src: url('../fonts/Font-Lato-Bold/Lato-Bold.ttf');        
+        font-weight: normal;
+        font-style: bold;
+}  
+    
+
+
+gris_oscuro = #444
+verde_gitHub = #2ECC71
+azul = #22BCE0
+naranja = #DD4F24
+gris_texto = #7a7a7a
+
+
+
+a 
+    color naranja 
+
+body
+    background: #E8E8E8
+    color: gris_oscuro
+    font-family: Arial
+    font-size: 16 px
+
+header
+    background: verde_gitHub
+    color: white
+    padding: 2em
+    position relative 
+    overflow hidden
+    box-shadow 0 5px 0 rgba(0, 0 , 0,0.2)
+    z-index 1
+    white:100%
+    .logo
+        font-size:2em
+        
+    .search-box
+        position absolute
+        right 25px
+        top 25px
+        width: 30%
+        background: white
+        border-radius: 10px
+        padding: 0.5em
+        
+        .icon-search
+            text-align: right
+            &:after
+                text-align: right
+                font-family icomoon-github
+                font-size:1em
+                color: gris_oscuro
+                content "\e600"   
+                
+.posts
+    padding 2.5%
+    position relative
+    margin 0
+    width 95%
+    .ng-scope
+        width: 70%
+        margin:0
+        padding:0
+        
+        .post
+            background #ECF0F1
+            position relative
+
+            left 15%
+            width 100%
+
+            color gris_texto
+            box-shadow 2px 5px 0px #BDC3C7
+            border-radius 0.5em 0.5em 0.5em 0.5em
+            &:hover
+                background: #34495E
+                box-shadow 2px 5px 0px #34495E 
+
+
+            .acciones
+                width:100%
+                position: relative
+                padding 0.5em
+                overflow hidden
+                                                                                                                                                
+                .numero-repos
+                        position: relative
+                        padding 1em
+                        .git-hub
+                            color #95A5A6
+                            position absolute
+                            left: 7%
+                            &:before
+                                font-size 1.5em
+                                font-family icomoon-github
+                                content: "\e602"
+                        .followers
+                            position: absolute
+                            right: 10%
+                            color #95A5A6
+                            &:before
+                                font-size 1.5em
+                                font-family icomoon-github
+                                content: "\e601"
+
+                        .git-hub, .followers
+                            text-decoration none
+                            top:0
+
+
+
+           
+
+
+
+        .descripcion            
+                    color gris_texto
+                    height 200px
+                    width 100%
+                    position relative
+                    margin 0
+                    padding 0
+            .name-autor
+                position absolute
+                margin auto
+                bottom 15%
+                width 100%
+                text-align: center
+                color black
+                
+                
+                    
+            .imagen
+                margin 1.5em 0 0 0
+                width 100%
+                
+
+
+                img
+                    position absolute
+                    margin auto
+                   
+                    left:15%
+                    right 15%
+                    top:10px
+                    height 60%
+                    width 70%
+                    border-radius 50%
+
+                    
+                    
+
+
+footer 
+    position relative
+    width 100%
+    padding-bottom: 1em
+    padding-top: 1em   
+    background #27AE60
+    text-align center
+    margin-top: 2em
+    .logo-github-footer
+        display block
+        color: white
+        margin-bottom: 0.5em
+        &:before
+            font-size 4em
+            font-family icomoon-github
+            content: "\e602"
+    .mejor
+        color: white
+
+
+         
+    
+
+
+
+.left
+    float left
+.right
+    float right
+
+@media screen and (min-width: 300px)
+     
+
+    .posts
+        display: inline-block
+        .ng-scope          
+            width:40%
+            float: left
+            margin-right:2em      
+            .post
+                width: 100%
+
+@media screen and (min-width: 500px)
+     
+
+    .posts
+        display: inline-block
+        .ng-scope          
+            width:20%
+            float: left
+            margin-right:3em
+            margin-left: 1em
+
+            .post
+                width: 100%
+
+@media screen and (min-width: 700px)
+     
+
+    .posts
+        display: inline-block
+        .ng-scope          
+            width:10%
+            float: left
+            margin-right:4em
+            margin-left: 3em
+
+            .post
+                width: 100%
+
+
+                   
+            
+
+              
+    
+
+            
+                
+
